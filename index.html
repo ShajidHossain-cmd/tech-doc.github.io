@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Demo Doc</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Installing_Python_&_PyCharm"
+            >Installing Python & PyCharm</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Setup_&_Hello_World"
+            >Setup & Hello World</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li>
+          <a class="nav-link" href="#if...else_statement"
+            >if...else statement</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Python is an object-oriented, cross-platform programming language that
+          is widely used for web development, scientific computing, and data
+          analysis. It is known for its simplicity, readability, and
+          versatility.
+        </p>
+        <ul>
+          <li>
+            Python comes with a standard library of modules and classes, such as
+            math, datetime, and random, that provide commonly used
+            functionality. In addition, third-party libraries can be easily
+            installed using package managers like pip to extend the language's
+            capabilities.
+          </li>
+          <li>
+            On the web, Python is often used in server-side scripting to handle
+            requests and responses from clients. Frameworks like Flask and
+            Django provide tools for building web applications quickly and
+            efficiently.
+          </li>
+          <li>
+            In scientific computing and data analysis, Python is a popular
+            choice because of its powerful libraries for numerical computation,
+            such as NumPy and SciPy, and visualization, such as Matplotlib and
+            Seaborn.
+          </li>
+        </ul>
+        <p>
+          Whether you're building a web application or analyzing data, Python's
+          simplicity and flexibility make it a valuable tool for developers and
+          scientists alike.
+        </p>
+      </section>
+      <section class="main-section" id="Installing_Python_&_PyCharm">
+        <header>Installing Python & PyCharm</header>
+        <p>Installing Python:</p>
+        <ol>
+          <li>
+            Go to the official Python website at
+            <a href="https://www.python.org/downloads/" target="_blank"
+              >https://www.python.org/downloads/</a
+            >
+          </li>
+          <li>
+            Choose the version of Python you want to install. We recommend the
+            latest stable version.
+          </li>
+          <li>
+            Download the appropriate installer for your operating system
+            (Windows, macOS, or Linux).
+          </li>
+          <li>
+            Run the installer and follow the prompts to install Python. Make
+            sure to add Python to your PATH environment variable if prompted.
+          </li>
+        </ol>
+        <p>Installing PyCharm:</p>
+        <ol>
+          <li>
+            Go to the official PyCharm website at
+            <a
+              href="https://www.jetbrains.com/pycharm/download/"
+              target="_blank"
+              >https://www.jetbrains.com/pycharm/download/</a
+            >
+          </li>
+          <li>
+            Choose the edition of PyCharm you want to install. We recommend the
+            Community edition, which is free and open-source.
+          </li>
+          <li>
+            Download the appropriate installer for your operating system
+            (Windows, macOS, or Linux).
+          </li>
+          <li>
+            Run the installer and follow the prompts to install PyCharm. Make
+            sure to select the appropriate options, such as creating a desktop
+            shortcut, during the installation process.
+          </li>
+        </ol>
+        <p>
+          Once you have installed Python and PyCharm, you can start writing and
+          running Python code in PyCharm. If you're new to PyCharm, we recommend
+          checking out the PyCharm documentation and tutorials to get started.
+        </p>
+      </section>
+      <section class="main-section" id="Setup_&_Hello_World">
+        <header>Setup & Hello World</header>
+        <p>
+          The "Hello, World!" program is a simple program that outputs the
+          message "Hello, World!" to the screen. It is often used as a first
+          example when learning a new programming language. Here's how to write
+          the "Hello, World!" program in Python:
+        </p>
+        <ol>
+          <li>Open PyCharm and create a new Python project.</li>
+          <li>
+            Create a new Python file by right-clicking on the project in the
+            Project pane and selecting "New" > "Python File".
+          </li>
+          <li>Name the file "hello_world.py".</li>
+          <li>In the editor window, type the following code:</li>
+          <code>print("Hello, World!")</code>
+          <li>
+            Save the file by pressing Ctrl + S (Windows/Linux) or Command + S
+            (macOS).
+          </li>
+        </ol>
+        <p>
+          To run the program, you can either click the green "Run" button in the
+          toolbar, or right-click on the file in the Project pane and select
+          "Run 'hello_world'". The output should appear in the "Run" pane at the
+          bottom of the PyCharm window:
+        </p>
+        <code>Hello, World!</code>
+        <p>
+          Congratulations, you have written and run your first Python program!
+        </p>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          In Python, a variable is a name that refers to a value. Variables are
+          used to store and manipulate data in a program. You can create a
+          variable by assigning a value to a name using the = operator. Here's
+          an example of how to create a variable in Python:
+        </p>
+        <code>my_variable = 42</code>
+        <p>
+          In this example, we've created a variable called `my_variable` and
+          assigned it the value `42`. Now we can use this variable throughout
+          our program to refer to this value. Variables can store different
+          types of data in Python, such as numbers, strings, and lists. Here are
+          some examples:
+        </p>
+        <code>my_integer = 42<br>my_float = 3.14<br>my_string = "Hello, world!"<br>my_list = [1, 2, 3]</code>
+        
+        <p>
+          You can also assign the value of one variable to another variable,
+          like this:
+        </p>
+        <code>x = 10<br>y = x </code>
+        <p>
+          In this example, we've assigned the value `10` to `x`, and then
+          updated `x` to have the value `20`. Variables are an important concept
+          in programming and are used extensively in Python and other
+          programming languages.
+        </p>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>
+          In Python, a data type is a classification of data that determines the
+          possible values that the data can take and the operations that can be
+          performed on it. Python has several built-in data types, including:
+        </p>
+        <ul>
+          <li>Integers: whole numbers, such as 1, 2, and 3.</li>
+          <li>Floats: decimal numbers, such as 3.14 and 2.0.</li>
+          <li>
+            Strings: sequences of characters, such as "hello" and "world".
+          </li>
+          <li>Booleans: values that are either True or False.</li>
+          <li>
+            Lists: ordered collections of values, which can be of different data
+            types.
+          </li>
+          <li>
+            Tuples: ordered collections of values, which are immutable (cannot
+            be changed).
+          </li>
+          <li>Dictionaries: unordered collections of key-value pairs.</li>
+        </ul>
+        <p>
+          To determine the data type of a value or variable, you can use the
+          type() function. For example:
+        </p>
+        <code
+        my_integer = 42<br>
+        print(type(my_integer))  # Output: class 'int'><br><br>
+        
+        my_string = "hello"<br>
+        print(type(my_string))  # Output: class 'str'>
+        </code>
+        <p>
+          You can convert between data types using built-in functions, such as
+          int(), float(), and str(). For example:
+        </p>
+        <code
+          >my_string = "42" <br>
+          my_integer = int(my_string) <br>
+          print(my_integer) # Output: 42
+        </code>
+        <p>
+          Understanding data types is important in programming, as it determines
+          the types of operations that can be performed on data and how that
+          data can be manipulated.
+        </p>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <p>
+          In Python, an if...else statement allows you to conditionally execute
+          code based on a boolean expression. The general syntax of an if...else
+          statement is:
+        </p>
+        <code
+          >if condition:<br>
+          # Code to execute if condition is True<br>
+          else:<br>
+          # Code to execute if condition is False
+        </code>
+        <p>
+          The `condition` in the if statement is a boolean expression that
+          evaluates to either True or False. If the condition is True, the code
+          inside the if block is executed. If the condition is False, the code
+          inside the else block is executed. Here's an example of an if...else
+          statement in action:
+        </p>
+        <code
+          >x = 10<br>
+          if x > 5:<br>
+              print("x is greater than 5")<br>
+          else:<br>
+              print("x is less than or equal to 5")
+        </code>
+        <p>
+          In this example, we check if `x` is greater than `0` using the `>`
+          operator. If it is, we print the message "x is positive". If not, we
+          move on to the next condition and check if `x` is equal to `0` using
+          the `==` operator. If it is, we print the message "x is zero". If
+          neither condition is True, we execute the code inside the else block
+          and print the message "x is negative". if...else statements are a
+          fundamental building block in programming and are used extensively in
+          Python and other programming languages.
+        </p>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <p>
+          In Python, loops allow you to execute a block of code repeatedly,
+          either a fixed number of times or until a certain condition is met.
+          There are two main types of loops in Python: `for` loops and `while`
+          loops. A `for` loop is used to iterate over a sequence (such as a list
+          or a string) and execute a block of code for each item in the
+          sequence. The general syntax of a `for` loop is:
+        </p>
+        <code
+          >for item in sequence:<br>
+          # Code to execute for each item in sequence
+        </code>
+        <p>Here's an example of a for loop that prints each item in a list:</p>
+        <code
+          >fruits = ["apple", "banana", "cherry"]<br>
+          for fruit in fruits:<br>
+             print(fruit)
+        </code>
+        <p>
+          In this example, we've defined a list of fruits and then used a `for`
+          loop to iterate over each item in the list and print it to the
+          console. A `while` loop is used to repeatedly execute a block of code
+          as long as a certain condition is True. The general syntax of a
+          `while` loop is:
+        </p>
+        <code
+          >while condition:<br># Code to execute as long as condition is True
+        </code>
+        <p>Here's an example of a while loop that counts from 1 to 5:</p>
+        <code>count = 1<br>while count <= 5:<br> print(count)<br> count += 1 </code>
+        <p>
+          In this example, we've initialized a variable `count` to `1`. Then
+          we've used a `while` loop to repeatedly print the value of `count` to
+          the console and increment `count` by `1` until it reaches `5`. Loops
+          are a fundamental concept in programming and are used extensively in
+          Python and other programming languages to iterate over data
+          structures, perform calculations, and perform other tasks that require
+          repeated execution of code.
+        </p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          Functions are a way to group related code together and reuse it
+          throughout your program. In Python, you can define a function using
+          the `def` keyword, followed by the name of the function and any
+          parameters it takes, enclosed in parentheses. The body of the function
+          is then indented below the function definition. Here's an example of a
+          simple function that adds two numbers together and returns the result:
+        </p>
+        <code>def add_numbers(a, b):<br> return a + b </code>
+        <p>
+          In this example, we've defined a function called `add_numbers` that
+          takes two parameters, `a` and `b`. The body of the function simply
+          adds these two numbers together and `returns` the result using the
+          return keyword. To use the `add_numbers` function, we can call it and
+          pass in two numbers as arguments:
+        </p>
+        <code>result = add_numbers(3, 5)<br> print(result) # Output: 8 </code>
+        <p>
+          In this example, we're calling the `add_numbers` function and passing
+          in the numbers `3` and `5` as arguments. The function returns the
+          result of adding these two numbers together, which is then assigned to
+          the variable `result` and printed to the console. Functions can also
+          have default parameter values and can return multiple values using
+          tuples. Here's an example:
+        </p>
+        <code
+          >def greet(name, greeting="Hello"):<br> return greeting, name<br><br> result1 =
+          greet("Alice")<br> result2 = greet("Bob", "Hi")<br><br> print(result1) # Output:
+          ('Hello', 'Alice')<br> print(result2) # Output: ('Hi', 'Bob')
+        </code>
+        <p>
+          In this example, we've defined a function called `greet` that takes
+          two parameters, `name` and `greeting`, with a default value of
+          `"Hello"`. The function returns a tuple containing the `greeting` and
+          `name`. We then call the `greet` function twice, once with just a name
+          and once with both a name and a custom greeting. The function returns
+          a tuple in both cases, which we assign to the variables `result1` and
+          `result2`. We can then print these tuples to the console. Functions
+          are a powerful tool in Python that allow you to write modular,
+          reusable code. By defining functions that perform specific tasks, you
+          can make your code more organized, easier to read, and more
+          maintainable over time.
+        </p>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+            <a id="ref" href="https://openai.com/blog/chatgpt" target="_blank">ChatGPT</a>
+      </section>
+    </main>
+  </body>
+</html>
